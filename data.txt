@@ -1,0 +1,12 @@
+{"Dat Guy", new() 
+  {
+    { "Base Attack", 11 },
+    { "Base Defense", 10 },
+    { "Base Magic", 17 },
+    { "Base Resistance", 19 },
+    { "Base Health", 80 },
+    { "Base Intelligence", 12 },
+    { "Base Control", 13 },
+    { "Base Speed", 13 },
+  }
+}

@@ -1,0 +1,305 @@
+[gd_scene load_steps=10 format=3 uid="uid://e6qoulysx6xd"]
+
+[ext_resource type="Script" path="res://Calculator.gd" id="1_521bf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ffh51"]
+bg_color = Color(0.690196, 0.792157, 0.690196, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_kpbb0"]
+font_size = 25
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Gradient" id="Gradient_y6tiy"]
+offsets = PackedFloat32Array(0.937063, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_mv1bv"]
+gradient = SubResource("Gradient_y6tiy")
+fill_to = Vector2(0, 0.786408)
+
+[sub_resource type="Gradient" id="Gradient_ou4ik"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_kp8vv"]
+gradient = SubResource("Gradient_ou4ik")
+fill_from = Vector2(0.966019, 0.461165)
+
+[sub_resource type="LabelSettings" id="LabelSettings_v4qsf"]
+font_size = 25
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_t0wr7"]
+font_size = 40
+font_color = Color(0, 0, 0, 1)
+
+[node name="Calculator" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_521bf")
+
+[node name="PC" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ffh51")
+
+[node name="VBC1" type="VBoxContainer" parent="PC"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="AttackLabel" type="Label" parent="PC/VBC1"]
+layout_mode = 2
+text = "Attack"
+horizontal_alignment = 1
+
+[node name="Attack" type="HSlider" parent="PC/VBC1"]
+layout_mode = 2
+min_value = 5.0
+max_value = 20.0
+value = 10.0
+rounded = true
+
+[node name="Magic Label" type="Label" parent="PC/VBC1"]
+layout_mode = 2
+text = "Magic"
+horizontal_alignment = 1
+
+[node name="Magic" type="HSlider" parent="PC/VBC1"]
+layout_mode = 2
+min_value = 5.0
+max_value = 20.0
+value = 10.0
+rounded = true
+
+[node name="Defense Label" type="Label" parent="PC/VBC1"]
+layout_mode = 2
+text = "Defense"
+horizontal_alignment = 1
+
+[node name="Defense" type="HSlider" parent="PC/VBC1"]
+layout_mode = 2
+min_value = 5.0
+max_value = 20.0
+value = 10.0
+rounded = true
+
+[node name="Resistance Label" type="Label" parent="PC/VBC1"]
+layout_mode = 2
+text = "Resistance"
+horizontal_alignment = 1
+
+[node name="Resistance" type="HSlider" parent="PC/VBC1"]
+layout_mode = 2
+min_value = 5.0
+max_value = 20.0
+value = 10.0
+rounded = true
+
+[node name="Health Label" type="Label" parent="PC/VBC1"]
+layout_mode = 2
+text = "Health"
+horizontal_alignment = 1
+
+[node name="Health" type="HSlider" parent="PC/VBC1"]
+layout_mode = 2
+min_value = 25.0
+step = 5.0
+value = 50.0
+rounded = true
+
+[node name="Intelligence Label" type="Label" parent="PC/VBC1"]
+layout_mode = 2
+text = "Intelligence"
+horizontal_alignment = 1
+
+[node name="Intelligence" type="HSlider" parent="PC/VBC1"]
+layout_mode = 2
+min_value = 5.0
+max_value = 20.0
+value = 10.0
+rounded = true
+
+[node name="Control Label" type="Label" parent="PC/VBC1"]
+layout_mode = 2
+text = "Control"
+horizontal_alignment = 1
+
+[node name="Control" type="HSlider" parent="PC/VBC1"]
+layout_mode = 2
+min_value = 5.0
+max_value = 20.0
+value = 10.0
+rounded = true
+
+[node name="Speed Label" type="Label" parent="PC/VBC1"]
+layout_mode = 2
+text = "Speed"
+horizontal_alignment = 1
+
+[node name="Speed" type="HSlider" parent="PC/VBC1"]
+layout_mode = 2
+min_value = 5.0
+max_value = 20.0
+value = 10.0
+rounded = true
+
+[node name="Space2" type="Control" parent="PC/VBC1"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="HBC2" type="HBoxContainer" parent="PC/VBC1"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="Name Label" type="Label" parent="PC/VBC1/HBC2"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "     Name:"
+label_settings = SubResource("LabelSettings_kpbb0")
+
+[node name="Name" type="TextEdit" parent="PC/VBC1/HBC2"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+placeholder_text = "Character Name"
+wrap_mode = 1
+
+[node name="Space" type="Control" parent="PC/VBC1"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="HBC" type="HBoxContainer" parent="PC/VBC1"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_constants/separation = 50
+alignment = 2
+
+[node name="Randomize" type="TextureButton" parent="PC/VBC1/HBC"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = SubResource("GradientTexture2D_mv1bv")
+
+[node name="Label" type="Label" parent="PC/VBC1/HBC/Randomize"]
+layout_mode = 0
+offset_right = 65.0
+offset_bottom = 63.0
+text = "Random"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Reset" type="TextureButton" parent="PC/VBC1/HBC"]
+layout_mode = 2
+texture_normal = SubResource("GradientTexture2D_kp8vv")
+
+[node name="Label" type="Label" parent="PC/VBC1/HBC/Reset"]
+offset_right = 65.0
+offset_bottom = 63.0
+text = "Reset"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Save" type="TextureButton" parent="PC/VBC1/HBC"]
+layout_mode = 2
+texture_normal = SubResource("GradientTexture2D_kp8vv")
+
+[node name="Label" type="Label" parent="PC/VBC1/HBC/Save"]
+offset_right = 65.0
+offset_bottom = 63.0
+text = "Save"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBC2" type="VBoxContainer" parent="PC"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Attack" type="Label" parent="PC/VBC2"]
+custom_minimum_size = Vector2(0, 46)
+layout_mode = 2
+text = "10"
+label_settings = SubResource("LabelSettings_v4qsf")
+vertical_alignment = 2
+
+[node name="Magic" type="Label" parent="PC/VBC2"]
+custom_minimum_size = Vector2(0, 46)
+layout_mode = 2
+text = "10"
+label_settings = SubResource("LabelSettings_v4qsf")
+vertical_alignment = 2
+
+[node name="Defense" type="Label" parent="PC/VBC2"]
+custom_minimum_size = Vector2(0, 46)
+layout_mode = 2
+text = "10"
+label_settings = SubResource("LabelSettings_v4qsf")
+vertical_alignment = 2
+
+[node name="Resistance" type="Label" parent="PC/VBC2"]
+custom_minimum_size = Vector2(0, 46)
+layout_mode = 2
+text = "10"
+label_settings = SubResource("LabelSettings_v4qsf")
+vertical_alignment = 2
+
+[node name="Health" type="Label" parent="PC/VBC2"]
+custom_minimum_size = Vector2(0, 46)
+layout_mode = 2
+text = "50"
+label_settings = SubResource("LabelSettings_v4qsf")
+vertical_alignment = 2
+
+[node name="Intelligence" type="Label" parent="PC/VBC2"]
+custom_minimum_size = Vector2(0, 46)
+layout_mode = 2
+text = "10"
+label_settings = SubResource("LabelSettings_v4qsf")
+vertical_alignment = 2
+
+[node name="Control" type="Label" parent="PC/VBC2"]
+custom_minimum_size = Vector2(0, 46)
+layout_mode = 2
+text = "10"
+label_settings = SubResource("LabelSettings_v4qsf")
+vertical_alignment = 2
+
+[node name="Speed" type="Label" parent="PC/VBC2"]
+custom_minimum_size = Vector2(0, 46)
+layout_mode = 2
+text = "10"
+label_settings = SubResource("LabelSettings_v4qsf")
+vertical_alignment = 2
+
+[node name="VBC3" type="VBoxContainer" parent="PC"]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+
+[node name="Remaining" type="Label" parent="PC/VBC3"]
+custom_minimum_size = Vector2(400, 648)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 1
+text = "50"
+label_settings = SubResource("LabelSettings_t0wr7")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="value_changed" from="PC/VBC1/Attack" to="." method="_on_attack_value_changed"]
+[connection signal="value_changed" from="PC/VBC1/Magic" to="." method="_on_magic_value_changed"]
+[connection signal="value_changed" from="PC/VBC1/Defense" to="." method="_on_defense_value_changed"]
+[connection signal="value_changed" from="PC/VBC1/Resistance" to="." method="_on_resistance_value_changed"]
+[connection signal="value_changed" from="PC/VBC1/Health" to="." method="_on_health_value_changed"]
+[connection signal="value_changed" from="PC/VBC1/Intelligence" to="." method="_on_intelligence_value_changed"]
+[connection signal="value_changed" from="PC/VBC1/Control" to="." method="_on_control_value_changed"]
+[connection signal="value_changed" from="PC/VBC1/Speed" to="." method="_on_speed_value_changed"]
+[connection signal="pressed" from="PC/VBC1/HBC/Randomize" to="." method="_on_randomize_pressed"]
+[connection signal="pressed" from="PC/VBC1/HBC/Reset" to="." method="_on_reset_pressed"]
+[connection signal="pressed" from="PC/VBC1/HBC/Save" to="." method="_on_save_pressed"]

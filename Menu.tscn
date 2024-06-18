@@ -1,0 +1,63 @@
+[gd_scene load_steps=6 format=3 uid="uid://yykq4712onne"]
+
+[ext_resource type="Script" path="res://Menu.gd" id="1_dn0uc"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_wr1lk"]
+
+[sub_resource type="Gradient" id="Gradient_lsdwv"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_oo1qq"]
+gradient = SubResource("Gradient_lsdwv")
+width = 200
+height = 200
+
+[sub_resource type="LabelSettings" id="LabelSettings_w3seq"]
+font_size = 24
+font_color = Color(1, 0.117647, 0.117647, 1)
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dn0uc")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("CanvasTexture_wr1lk")
+
+[node name="Calculator" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 96.0
+offset_right = 286.0
+offset_bottom = 270.0
+texture_normal = SubResource("GradientTexture2D_oo1qq")
+
+[node name="Label" type="Label" parent="Calculator"]
+z_as_relative = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -59.0
+offset_top = -18.5
+offset_right = 59.0
+offset_bottom = 18.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Calculator"
+label_settings = SubResource("LabelSettings_w3seq")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Calculator" to="." method="_on_calculator_pressed"]
