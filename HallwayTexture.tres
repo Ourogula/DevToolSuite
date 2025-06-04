@@ -1,0 +1,7 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://brabm671b20oc"]
+
+[ext_resource type="Texture2D" uid="uid://cs1nc1tk1fw6h" path="res://SI_Grounds_Fall.png" id="1_gojpm"]
+
+[resource]
+atlas = ExtResource("1_gojpm")
+region = Rect2(0, 0, 95, 95)

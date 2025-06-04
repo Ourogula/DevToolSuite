@@ -1,0 +1,6 @@
+[gd_resource type="CanvasTexture" load_steps=2 format=3 uid="uid://cnybyovfie7wi"]
+
+[ext_resource type="Texture2D" uid="uid://cf430j4ywtr5m" path="res://icon.svg" id="1_j5o1x"]
+
+[resource]
+diffuse_texture = ExtResource("1_j5o1x")
