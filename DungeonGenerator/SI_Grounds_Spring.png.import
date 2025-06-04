@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dw5byok7v5nxy"
-path="res://.godot/imported/SI_Magma_Dungeon.png-6f233dbf8638e2ada9710850d8f8a5c0.ctex"
+uid="uid://blbj6vgpi2w7r"
+path="res://.godot/imported/SI_Grounds_Spring.png-a881bfd83c76ee3c0b7dff270a3afe1f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SI_Magma_Dungeon.png"
-dest_files=["res://.godot/imported/SI_Magma_Dungeon.png-6f233dbf8638e2ada9710850d8f8a5c0.ctex"]
+source_file="res://DungeonGenerator/SI_Grounds_Spring.png"
+dest_files=["res://.godot/imported/SI_Grounds_Spring.png-a881bfd83c76ee3c0b7dff270a3afe1f.ctex"]
 
 [params]
 

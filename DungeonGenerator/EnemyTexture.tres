@@ -1,6 +1,6 @@
 [gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://d2gdmaxd1v26i"]
 
-[ext_resource type="Texture2D" uid="uid://blbj6vgpi2w7r" path="res://SI_Grounds_Spring.png" id="1_obdrj"]
+[ext_resource type="Texture2D" uid="uid://blbj6vgpi2w7r" path="res://DungeonGenerator/SI_Grounds_Spring.png" id="1_obdrj"]
 
 [resource]
 atlas = ExtResource("1_obdrj")

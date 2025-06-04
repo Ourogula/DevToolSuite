@@ -6,5 +6,5 @@ func _on_calculator_pressed():
 
 
 func _on_dungeon_generator_pressed():
-  var dungeonGenerator = preload("res://DungeonGenerator.tscn").instantiate();
+  var dungeonGenerator = preload("res://DungeonGenerator/DungeonGenerator.tscn").instantiate();
   get_tree().root.add_child(dungeonGenerator);

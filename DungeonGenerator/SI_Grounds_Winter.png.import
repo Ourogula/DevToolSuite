@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cs1nc1tk1fw6h"
-path="res://.godot/imported/SI_Grounds_Fall.png-b63b0a58aec97263ca7711589d016808.ctex"
+uid="uid://c47lrkgiarh5y"
+path="res://.godot/imported/SI_Grounds_Winter.png-543ac70198f5e60a42bad491bea2d906.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SI_Grounds_Fall.png"
-dest_files=["res://.godot/imported/SI_Grounds_Fall.png-b63b0a58aec97263ca7711589d016808.ctex"]
+source_file="res://DungeonGenerator/SI_Grounds_Winter.png"
+dest_files=["res://.godot/imported/SI_Grounds_Winter.png-543ac70198f5e60a42bad491bea2d906.ctex"]
 
 [params]
 

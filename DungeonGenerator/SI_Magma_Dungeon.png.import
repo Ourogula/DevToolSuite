@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://i5e0ki1tdfx2"
-path="res://.godot/imported/SI_Grounds_Summer.png-62555213cde7c6f6cf2df5ddf5316498.ctex"
+uid="uid://dw5byok7v5nxy"
+path="res://.godot/imported/SI_Magma_Dungeon.png-3bee2982d549d3eef580a005214d42b9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SI_Grounds_Summer.png"
-dest_files=["res://.godot/imported/SI_Grounds_Summer.png-62555213cde7c6f6cf2df5ddf5316498.ctex"]
+source_file="res://DungeonGenerator/SI_Magma_Dungeon.png"
+dest_files=["res://.godot/imported/SI_Magma_Dungeon.png-3bee2982d549d3eef580a005214d42b9.ctex"]
 
 [params]
 
